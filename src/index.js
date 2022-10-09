@@ -5,7 +5,6 @@ import { refs } from './refs';
 const DEBOUNCE_DELAY = 300;
 
 const handleInput = event => {
-  console.log(event.target.value);
   const name = event.target.value.trim().toLowerCase();
   if (event.target.value === '') {
     refs.countryList.innerHTML = '';
